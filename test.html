@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		var b = '<b>插入文本</>';
+		
+		$("p").append(b);
+	});
+	$("#btn2").click(function(){
+		var a = '<li>插入项</li>';
+		$("ol").append(a);
+	});
+});
+</script>
+</head>
+<body>
+
+<p>这是一个段落。</p>
+<p>这是另一个段落</p>
+<ol>
+<li>列表项 1</li>
+<li>列表项 2</li>
+<li>列表项 3</li>
+</ol>
+<button id="btn1">插入文本</button>
+<button id="btn2">插入列表项</button>
+
+</body>
+</html>
